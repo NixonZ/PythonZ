@@ -1,7 +1,7 @@
 A=[1,3]
 B=[2,4,3,5]
 C=[]
-if len(A)>len(B):
+'''if len(A)>len(B):
     for x in A:
         for y in B:
             if x==y:
@@ -12,5 +12,6 @@ else:
         for y in A:
             if x==y:
                 C.append(x)
-                break
+                break'''
+C=[x for x in A if x in B]
 print(C)
